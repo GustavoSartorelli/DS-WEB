@@ -1,6 +1,3 @@
-"# DS-WEB"  
-
-- 😷 Estudando deenvolvimento Web
-- 👾 HTML, CSS e JS
-- 🙈 Técnico em Desenvolvimento de Sistemas - Senai Itu
-- 👀 gustavosartorellilima@gmail.com
+# DS-WEB  
+-  Aprendemos como mudar o ico da pagina web
+-  Aprendemos sobre estilização de textos, mudança do Favicon, Hyperlink e tabela
