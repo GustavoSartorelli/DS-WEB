@@ -1,1 +1,9 @@
-"aula-03" 
+- Aula-03 
+- <h3>Linguagem de marcação<h3>
+- 😶Lista não numerada: < ul > , </ ul >;
+- 😁Lista numerada: < ol > , </ ol >;
+- 🙄Lista de definição: < dl > , </ dl >;
+- 😂Divisão, Seção ou Bloco: < div > , </ div >;
+- 😶Input do tipo text: < label > , </ label >;
+- 😑Input - Tipos de entradas de dados: text, password, radio, checkbox, button e submit;
+- 😣Form - Formulario: name, value, placeholder, required, maxlength, disabled e readonly
