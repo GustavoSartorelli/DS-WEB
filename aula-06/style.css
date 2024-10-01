@@ -1,0 +1,41 @@
+p{
+    font-family: "Sixtyfour Convergence", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+  }
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.indent{
+    text-indent: 50px;
+}
+.shadow{
+    text-shadow: 2px 2px 2px green;
+}
+.shadow-blur{
+    text-shadow: 1px 1px 3px #00FF00;
+}
+.overline{
+    text-decoration: overline;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.underline{
+    text-decoration: underline;
+}
+.overline-underline{
+    text-decoration: overline underline;
+}
