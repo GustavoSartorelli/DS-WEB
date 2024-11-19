@@ -3,16 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplo Rotate</title>
+<title>Exemplo Gradiente</title>
     <style>
         .box {
-        width: 100px;
+        width: 200px;
         height: 100px;
-        background-color: #3498db;
-        transition: transform 0.5s;
-        }
-        .box:hover {
-        transform: rotate(45deg);
+        background: linear-gradient(45deg, #3498db, #9b59b6);
         }
     </style>
 </head>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplo Rotate</title>
+<title>Exemplo Translate</title>
     <style>
         .box {
         width: 100px;
@@ -12,7 +12,7 @@
         transition: transform 0.5s;
         }
         .box:hover {
-        transform: rotate(45deg);
+        transform: translate(50px, 50px);
         }
     </style>
 </head>
