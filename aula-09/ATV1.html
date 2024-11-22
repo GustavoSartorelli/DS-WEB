@@ -7,7 +7,16 @@
     <style>
         div{
             text-align: center;
+        }    
+
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
         }
+
         .box1 {
         display: inline-block;
         width: 100px;
@@ -15,10 +24,11 @@
         background-color: #b7db34;
         transition: transform 0.5s;
         }
-        
+
         .box1:hover {
         transform: scale(1.5);
         }
+
         .box2 {
         display: inline-block;
         width: 100px;
@@ -26,10 +36,11 @@
         background-color: #4234db;
         transition: transform 0.5s;
         }
-        
+
         .box2:hover {
         transform: rotate(45deg);
         }
+
         .box3 {
         display: inline-block;    
         width: 100px;
@@ -38,9 +49,8 @@
         opacity: 1;
         transition: opacity 0.5s;
         }
-        
+
         .box3:hover {
-            
         opacity: 0.5;
         }
 
@@ -50,17 +60,16 @@
         background-color: #3498db;
         border-radius: 50%;
         }
-        .box4 {
 
+        .box4 {
         display: inline-block;
         width: 100px;
         height: 100px;
         background-color: #3498db;
         transition: transform 0.5s;
         }
-        
+
         .box4:hover {
-        
         transform: rotate(45deg);
         }
 
@@ -71,8 +80,8 @@
         background: linear-gradient(45deg, #ffffff, #000000);
         }
         
-                /* Define os passos da animação */
-                @keyframes moverEfeito {
+        /* Define os passos da animação */
+        @keyframes moverEfeito {
         0% {
         transform: translateX(0);
         background-color: rgb(2, 67, 0);
