@@ -18,103 +18,121 @@
         }
 
         .box1 {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        background-color: #b7db34;
-        transition: transform 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #b7db34;
+            transition: transform 0.5s;
+            border: 2px solid
         }
 
         .box1:hover {
-        transform: scale(1.5);
+            transform: scale(1.5);
         }
 
         .box2 {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        background-color: #4234db;
-        transition: transform 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #4234db;
+            transition: transform 0.5s;
+            border: 2px solid
         }
 
         .box2:hover {
-        transform: rotate(45deg);
+            transform: rotate(45deg);
         }
 
         .box3 {
-        display: inline-block;    
-        width: 100px;
-        height: 100px;
-        background-color: #db349b;
-        opacity: 1;
-        transition: opacity 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+            width: 100px;
+            height: 100px;
+            background-color: #db349b;
+            opacity: 1;
+            transition: opacity 0.5s;
+            border: 2px solid
         }
 
         .box3:hover {
-        opacity: 0.5;
+            opacity: 0.5;
         }
 
         .box4 {
-        width: 100px;
-        height: 100px;
-        background-color: #3498db;
-        border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%;
+            border: 2px solid
         }
 
         .box4 {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        background-color: #3498db;
-        transition: transform 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            transition: transform 0.5s;
         }
 
         .box4:hover {
-        transform: rotate(45deg);
+            transform: rotate(45deg);
         }
 
         .box5 {
-        display: inline-block;
-        width: 300px;
-        height: 100px;
-        background: linear-gradient(45deg, #ffffff, #000000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(45deg, #ffffff, #000000);
+            border: 2px solid
         }
 
         /* Define os passos da animação */
         @keyframes moverEfeito {
         0% {
-        transform: translateX(0);
-        background-color: rgb(2, 67, 0);
+            transform: translateX(0);
+            background-color: rgb(2, 67, 0);
         }
 
         25% {
-        transform: translateX(200px);
-        background-color: rgb(0, 255, 251);
+            transform: translateX(200px);
+            background-color: rgb(0, 255, 251);
         }
 
         50% {
-        transform: translateX(200px);
-        background-color: rgb(60, 0, 255);
+            transform: translateX(200px);
+            background-color: rgb(60, 0, 255);
         }
 
         75% {
-        transform: translateX(200px);
-        background-color: rgb(187, 0, 255);
+            transform: translateX(200px);
+            background-color: rgb(187, 0, 255);
         }
 
         100% {
-        transform: translateX(0);
-        background-color: rgb(2, 67, 0);
+            transform: translateX(0);
+            background-color: rgb(2, 67, 0);
         }
         }
         
         /* Aplica a animação ao elemento */
         .animado {
-            display: inline-block;
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        animation: moverEfeito 3s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: moverEfeito 3s ease-in-out infinite;
+            border: 2px solid
         }
     </style>
 </head>
