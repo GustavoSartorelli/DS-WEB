@@ -1,4 +1,4 @@
-tividade de animação:
+Atividade de animação:
 - Animation
 - border
 - efeito
