@@ -42,32 +42,30 @@
     <br><br><br>
 
     <?php
-
+        session_start();
         include_once('connection.php');
         echo '<br>';
         echo '<h3>Produtos cadastrados: </h3>';
         $sql = "SELECT * FROM produto ORDER BY nome ASC";
         $resultado = mysqli_query($conexao, $sql);
 
-        // Verificar se há registros
+        // Verificar se há registros - PRODUTOS
         if (mysqli_num_rows($resultado) > 0) {
             while ($linha = mysqli_fetch_assoc($resultado)) {
-                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - preco: " . $linha['valor'] ."<br>";
+                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Preco: " . $linha['valor'] . " - Estoque: " . $linha['estoque'] . "<br>";
             }
         } else {
             echo "Nenhum registro encontrado.";
         }
-
-        include_once('connection.php');
         echo '<br>';
         echo '<h3>Clientes cadastrados: </h3>';
         $sql = "SELECT * FROM cliente ORDER BY nome ASC";
         $resultado = mysqli_query($conexao, $sql);
 
-        // Verificar se há registros
+        // Verificar se há registros - CLIENTES
         if (mysqli_num_rows($resultado) > 0) {
             while ($linha = mysqli_fetch_assoc($resultado)) {
-                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Valor: " . $linha['valor'] . " - Estoque: " . $linha['estoque'] . "<br>";
+                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Email: " . $linha['email'] . "<br>";
             }
         } else {
             echo "Nenhum registro encontrado.";
