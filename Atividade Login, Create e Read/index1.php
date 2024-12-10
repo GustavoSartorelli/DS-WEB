@@ -63,9 +63,8 @@
 <body>
 
 <div class="primeira-div">
-    
     <form action="login.php" method="post">
-   
+
     <h2>Sistema de login</h2>
         <label>Login:</label>
         <input type="text" name="login" required placeholder="email"><br>
@@ -75,6 +74,6 @@
 
         <input type="submit" value="ENVIAR">
     </form>
-    </div>
+</div>
 </body>
 </html>
