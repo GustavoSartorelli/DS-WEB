@@ -1,3 +1,5 @@
+//Lista de Exercícios 1 – Funções em JavaScript
+
 //1
 console.log("Bom Dia, Mundo!!!")
 alert("Bom Dia, Mundo!!!")
@@ -48,8 +50,8 @@ alert(resultado * 0,5556)
 
 //6
 var capital = Number.parseInt(prompt("Digite Capital inicial investido"))
-var taxa = prompt("Digite a taxa em porcentagem")
-var tempo = prompt("Digite o tempo investido em meses")
+var taxa = Number.parseInt(prompt("Digite a taxa em porcentagem"))
+var tempo = Number.parseInt(prompt("Digite o tempo investido em meses"))
 
-var R = ((capital * (1+(taxa/100)) ** tempo))
-alert (R.toFixed(2))
+var Resul = ((capital * (1+(taxa/100)) ** tempo))
+alert (Resul.toFixed(2))
