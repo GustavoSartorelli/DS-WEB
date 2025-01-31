@@ -82,8 +82,8 @@
 </head>
 <body>
     <br>
-        <a href="logout.php"><button>Logout</a> <a href="cookie.php"><button>Salvar</a>
-        <a href="index2.php"><button>Tabela de cadastro<button>
+    <a href="logout.php"><button>Logout</a> <a href="cookie.php"><button>Salvar</a>
+    <a href="index2.php"><button>Tabela de cadastro<button>
 </body>
 </html>
 

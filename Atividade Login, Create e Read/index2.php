@@ -76,37 +76,39 @@
 </head>
 <body>
 <div>
-        <h1>Cadastro Usuario: </h1>
-        <form action="insertiusuario.php" method="POST">
-            <label>Nome: </label>
-            <input type="text" name="nome">
-            <br>
-            <label>Email: </label>
-            <input type="text" name="email">
-            <br>
-            <label>Senha: </label>
-            <input type="text" name="senha">
-            <br><br>
-            <input type="submit" value="Cadastrar">
-        </form>
-        <br><br><br>
+    <h1>Cadastro Usuario: </h1>
+    <form action="insertiusuario.php" method="POST">
+        <label>Nome: </label>
+        <input type="text" name="nome">
+        <br>
 
-        <?php
-            include_once('connection.php');
-            echo '<br>';
-            $sql = "SELECT * FROM usuario ORDER BY nome ASC";
-            $resultado = mysqli_query($conexao, $sql);
+        <label>Email: </label>
+        <input type="text" name="email">
+        <br>
 
-            if (mysqli_num_rows($resultado) > 0) {
-                while ($linha = mysqli_fetch_assoc($resultado)) {
-                    echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Email: " . $linha['email'] . " - Senha: " . $linha['senha'] . "<br>";
-                }
-            } else {
-                echo "Nenhum registro encontrado.";
+        <label>Senha: </label>
+        <input type="text" name="senha">
+        <br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    <br><br><br>
+
+    <?php
+        include_once('connection.php');
+        echo '<br>';
+        $sql = "SELECT * FROM usuario ORDER BY nome ASC";
+        $resultado = mysqli_query($conexao, $sql);
+
+        if (mysqli_num_rows($resultado) > 0) {
+            while ($linha = mysqli_fetch_assoc($resultado)) {
+                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Email: " . $linha['email'] . " - Senha: " . $linha['senha'] . "<br>";
             }
-        ?>
-
-    </div>
+        } else {
+            echo "Nenhum registro encontrado.";
+        }
+    ?>
+</div>
 
     <h1>Formulário de Produtos:</h1>
     <form action="insertiprodutos.php" method="POST">
@@ -125,22 +127,20 @@
     <br><br><br>
 
     <?php   
-            session_start();
-            include_once('connection.php');
-            echo '<br>';
-            echo '<h3>Produtos cadastrados: </h3>';
-            $sql = "SELECT * FROM produtos ORDER BY nome ASC";
-            $resultado = mysqli_query($conexao, $sql);
+        session_start();
+        include_once('connection.php');
+        echo '<br>';
+        echo '<h3>Produtos cadastrados: </h3>';
+        $sql = "SELECT * FROM produtos ORDER BY nome ASC";
+        $resultado = mysqli_query($conexao, $sql);
 
-            if (mysqli_num_rows($resultado) > 0) {
-                while ($linha = mysqli_fetch_assoc($resultado)) {
-                    echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Descrição: " . $linha['descricao'] . " - Preço: " . $linha['preco'] . "<br>";
-                }
-            } else {
-                echo "Nenhum registro encontrado.";
+        if (mysqli_num_rows($resultado) > 0) {
+            while ($linha = mysqli_fetch_assoc($resultado)) {
+                echo "ID: " . $linha['id'] . " - Nome: " . $linha['nome'] . " - Descrição: " . $linha['descricao'] . " - Preço: " . $linha['preco'] . "<br>";
             }
-        ?>
-
-</div>
+        } else {
+            echo "Nenhum registro encontrado.";
+        }
+    ?>
 </body>
 </html>
