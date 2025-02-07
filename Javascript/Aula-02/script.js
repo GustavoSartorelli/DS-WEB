@@ -17,3 +17,17 @@ document.querySelector("P#paragrafo").style.backgroundColor = "blue";
 var paragrafo = document.querySelector("p").style;
 paragrafo.backgroundColor= "red";
 paragrafo.color= "white";
+
+
+function alertaDeClique(){
+    alert("Você clicou no botão!")
+}
+
+function calcular(){
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+
+    var resultado = numero1 + numero2;
+
+    document.getElementById("resultado").innerHTML = "resultado:  " + resultado;
+}
