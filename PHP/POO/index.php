@@ -285,6 +285,14 @@ class ContaBanco{
     public function nome(){
         return "O nome da conta é ".$this->nome;
     }
+    public function depositar($deposito){
+        $this->saldo += $deposito;
+        return "Este é o novo saldo ".$this->saldo;
+    }
+    public function sacar($saque){
+        $this->saldo -= $saque;
+        return "Este é o novo saldo ".$this->saldo;
+    }
     public function numeroconta(){
         return "O numero da conta é ".$this->numeroconta;
     }
@@ -297,11 +305,12 @@ echo "<br>";
 echo "Atributos CONTA BANCO:";
 echo "<br> <br>";
 $contaGustavo = new ContaBanco();
-$contaGustavo->saldo ="Saldo:" . 500 . "0,00";
+$contaGustavo->saldo = 5000 . ",00";
 $contaGustavo->numeroconta ="Numero da conta:" . 12354684;
 $contaGustavo->titular = "Nome Titular:" . "Gustavo Sartorelli";
 
 echo $contaGustavo->titular . "<br>";
 echo $contaGustavo->numeroconta . "<br>";
-echo $contaGustavo->saldo . "<br>";
+echo $contaGustavo->saldo(20);
+
 ?>
