@@ -1,15 +1,35 @@
-function sauldar(){
-    var mensagem = document.getElementById("nome").value;
-    document.getElementById("mensagem").innerHTML = "Bem-Vindo(a)" + " " + mensagem;
-}
+//Aparecer Bem-Vindo(a) + nome
+    function sauldar(){
+        var mensagem = document.getElementById("nome").value;
+        document.getElementById("mensagem").innerHTML = "Bem-Vindo(a)" + " " + mensagem;
+    }
 
-function calcular(){
-    var numero1 = document.getElementById(numero1).value;
-    var numero2 = document.getElementById(numero2).value;
+//Calculo se é Par ou Impar
+    function calcular(){
+        var valor = document.getElementById("numero").value;
+        var numero = parseInt(valor);
+        var resultado = numero % 2 === 0 ? "Par" : "Ímpar";
+        document.getElementById("resultado").innerHTML = numero + " é um numero: " + resultado;
+    }
 
-    console.log(typeof numero1);
-    var numero1 = Number.parseInt(numero1);
+//Letra maiusculas
+    function transformar() {
+        var palavra = window.document.getElementById("nome1").value;
+        var resultado = palavra.toUpperCase();
+        document.getElementById("res").innerText = resultado;
+    }
 
-    var resultado = numero1 % 2;
-    console.log(resultado)
-}
+//Receber valor e uma porcentagem
+    function verificacaodoNumero2() {
+        var valor1 = document.getElementById("numero2").value;
+        var valorPorcentagem = document.getElementById("porcentagem").value;
+        var numero2 = parseFloat(valor1);
+        var porcentagem = parseFloat(valorPorcentagem);
+    
+    if (isNaN(numero2)){
+        document.getElementById("porcentagem").innerHTML = "Por favor, insira um número válido.";
+        return;
+    }
+    var resultado2 = (numero2 * porcentagem / 100);
+        document.getElementById("resultado2").innerHTML = numero2 + " sendo acrecido em " + porcentagem + "% é de " + (numero2 + resultado2);
+    }

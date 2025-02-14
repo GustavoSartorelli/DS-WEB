@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Pagina das Atv - Eventos DOM em JavaScript</title>
+</head>
+<body>
+<!--Botão informar o nome-->
+    <h3>Coloque seu nome!</h3> 
+    <p>Nome Completo:</p>
+    <input type="text" id="nome">
+    <br>
+    <button onclick="sauldar()">Enviar</button>
+    <br>
+    <h4 id="mensagem">Bem-Vindo(a)</h4>
+    <br>
+    
+<!--Botão fazer o calculo-->
+    <h3>Digite algum numero para saber se é Impar ou Par!</h3>
+    <p>Digite seu numero:</p>
+    <input type="number" id="numero">
+    <br>
+    <button onclick="calcular()">Realizar o calculo</button>
+    <br>
+    <h4 id="resultado">Resultado irá aparecer aqui...</h4>
+    <br>
+
+<!--Deixar a letra maiuscula-->
+    <h3>Digite alguma coisa!</h3>
+    <p>Digite:</p>
+    <input type="text" id="nome1">
+    <br>
+    <button onclick="transformar()">Clique aqui</button>
+    <p id="res"></p>
+    <br>
+
+<!--Calcular em porcentagem-->
+    <h3>Calculadora de Porcentagem!</h3>
+    <label for="numero2">Número:</label>
+    <input type="number" id="numero2" placeholder="Digite um numero">   
+    <label for="porcentagem">Porcentagem: </label>
+    <input type="number" id="porcentagem" placeholder="Numero em porcentagem">
+    <br>
+    <button onclick="verificacaodoNumero2()">Calcular</button>
+    <p id="resultado2"></p>
+    <br>
+
+<!--Box colorida-->
+    <div>
+        <div id="colorBox" style="width: 150px; height: 150px; background-color: rgb(23, 193, 165); margin-bottom: 5px;">
+        </div>
+        <button onclick="BoxColor()">Mudar Cor</button>
+    </div>
+
+    <script>
+        function BoxColor(){
+            const colors = ["blue", "red"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById("colorBox").style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+<script src="script.js"></script>
+</html>
