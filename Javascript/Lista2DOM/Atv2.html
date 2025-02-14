@@ -5,7 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista 2 das Atv - Eventos DOM em HTML e JavaScript</title>
 </head>
-<body>
-    
-</body>
+    <body>
+    <!--Informa se é maior ou menor de idade-->
+        <h3>Informe o seu idade:</h3>
+        <p>Idade:</p>
+        <input type="number" id="idade">
+        <button onclick="usuario()">Enviar</button>
+        <h4 id="res"></h4>
+        <br>
+
+    <!--Numero positivo, negativo ou zero-->
+        <h3>Insira um numero:</h3>
+        <p>Numero:</p>
+        <input type="number" id="numero1">
+        <button onclick="Numero()">Enviar</button>
+        <h4 id="result"></h4>
+        <br>
+
+    <!--Nome de usuario e senha, se nome for "admin" e senha "12345, exibir boas-vindas, caso não dar erro-->
+        <h3>Informe seu nome:</h3>
+        <p>Nome:</p>
+        <input type="text" id="nomeUsuario">
+        <h3>Informe sua senha:</h3>
+        <p>Senha:</p>
+        <input type="number" id="senhaUsuario">
+        <button onclick="usuarioEsenha()">Enviar</button>
+        <h4 id="resultado"></h4>
+        <br>
+
+    <!--Usuario inserir dois numeros e uma operação-->
+        <h3>Inserir dois numeros!</h3>
+        <p>Digite seu primeiro numero:</p>
+        <input type="number" id="priNumero">
+        <select id="operacao">
+            <option value="+">Adição</option>
+            <option value="-">subtração</option>
+            <option value="*">multiplicação</option>
+            <option value="/">divisão</option>
+        </select>
+        <p>Digite seu segundo numero:</p>
+        <input type="number" id="segNumero">
+        <button onclick="operacao1()">Calcular</button>
+        <h4 id="resul"></h4>
+        <br>
+    </body>
+<script src="script.js"></script>
 </html>
