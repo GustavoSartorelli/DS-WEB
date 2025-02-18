@@ -1,51 +1,51 @@
 <?php
-    abstract class Animal{
-        public function fazerSom(){}
+abstract class Animal{
+    public function fazerSom(){}
+}
+
+class Cachorro extends Animal{
+    public function falar(){
+        echo "Au-Au";
+    }
+    public function mover(){
+        return "Anda de quatro patas";
+    }
+}
+
+class Gato extends Animal{
+    public function falar(){
+        echo "Miau";
+    }
+    public function mover(){
+        return "Anda de quatro patas";
+    }
+}
+
+class Passaro extends Animal{
+    public function falar(){
+        echo "Piu-Piu"; 
     }
 
-    class Cachorro extends Animal{
-        public function falar(){
-            echo "Au-Au";
-        }
-        public function mover(){
-            return "Anda de quatro patas";
-        }
+    public function mover(){
+        return "Anda de duas patas";
     }
+}
+$snoop = new Cachorro();
 
-    class Gato extends Animal{
-        public function falar(){
-            echo "Miau";
-        }
-        public function mover(){
-            return "Anda de quatro patas";
-        }
-    }
+echo $snoop->falar() . "<br/>";
+echo $snoop->mover() . "<br/>";
 
-    class Passaro extends Animal{
-        public function falar(){
-            echo "Piu-Piu"; 
-        }
+echo "-------------------------<br/>";
 
-        public function mover(){
-            return "Anda de duas patas";
-        }
-    }
-    $snoop = new Cachorro();
+$frajola = new Gato();
 
-    echo $snoop->falar() . "<br/>";
-    echo $snoop->mover() . "<br/>";
+echo $frajola->falar() . "<br/>";
+echo $frajola->mover() . "<br/>";
 
-    echo "-------------------------<br/>";
+echo "-------------------------<br/>";
 
-    $frajola = new Gato();
+$zeCarioca = new Passaro();
 
-    echo $frajola->falar() . "<br/>";
-    echo $frajola->mover() . "<br/>";
-
-    echo "-------------------------<br/>";
-
-    $zeCarioca = new Passaro();
-
-    echo $zeCarioca->falar() . "<br/>";
-    echo $zeCarioca->mover() . "<br/>";
+echo $zeCarioca->falar() . "<br/>";
+echo $zeCarioca->mover() . "<br/>";
 ?>
