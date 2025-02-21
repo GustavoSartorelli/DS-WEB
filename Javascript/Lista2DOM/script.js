@@ -23,7 +23,7 @@
     //Usuario e Senha, login ou erro
     function usuarioEsenha(){
         var nomeUsuario = document.getElementById("nomeUsuario").value;
-        var senhaUsuario = document.getElementById("senhaUsuario").value;
+        var senhaUsuario = document.getElementById("senhausuario").value;
         if(nomeUsuario === "admin" && senhaUsuario === "12345"){
             document.getElementById("resultado").innerText = "Login correto";
         }else{
