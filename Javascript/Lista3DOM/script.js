@@ -18,6 +18,6 @@ a.addEventListener('mouseout', sair)
     {
         a.innerText = 'Saiu!'
         a.style.background = 'blue';
-        a.style.height = '300px';
+        a.style.height = '300px';   
         a.style.width = '300px';
 }
