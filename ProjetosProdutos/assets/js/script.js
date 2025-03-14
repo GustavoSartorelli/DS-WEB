@@ -76,11 +76,9 @@ function validarDadosProduto(event) {
     form.stock.style.outline = "";
     form.price.style.outline = "";
 
-    // Limpar o valor de preço
     let valorFormatado = form.price.value;
     form.price.value = limparValorEnviado(valorFormatado);
-
-    // Validação do nome
+    
     if (form.name.value.length < 3 || form.name.value == "") {
         var alert = document.getElementById("alert-wrapper");
         form.name.focus();
@@ -93,12 +91,11 @@ function validarDadosProduto(event) {
         return false;
     }
 
-    // Validação do código de barras
     let codeNum = form.code.value;
     let codeBar = [];
-    let soma = 0; // Inicializando a soma
+    let soma = 0;
 
-    if (codeNum.length !== 13 || isNaN(codeNum)) {
+    if (codeNum.length !== 13) {
         var alert = document.getElementById("alert-wrapper");
         form.code.focus();
         alert.innerHTML = "Invalid barcode! Make sure it has 13 digits and only contains numbers.";
@@ -129,11 +126,8 @@ function validarDadosProduto(event) {
             form.code.style.outline = "2px solid red";
             return false;
         }
-
-        return true;
     }
 
-    // Validação do estoque
     if (form.stock.value == "" || isNaN(form.stock.value)) {
         var alert = document.getElementById("alert-wrapper");
         form.stock.focus();
@@ -145,7 +139,4 @@ function validarDadosProduto(event) {
         form.stock.style.outline = "2px solid red";
         return false;
     }
-
-    // Impedindo o envio do formulário
-    event.preventDefault();
 }
