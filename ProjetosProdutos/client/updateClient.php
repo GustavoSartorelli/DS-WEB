@@ -34,7 +34,7 @@
         $email = $data['email'];
         $obs = $data['observacao'];
 
-        include_once "../assets/components/navbarSub.php"
+        include_once "../assets/components/navbar.php"
     ?>
     <p class="wrapper alert-wrapper" id="alert-wrapper"></p>
     <p class="wrapper observation-wrapper" id="observation-wrapper"></p>

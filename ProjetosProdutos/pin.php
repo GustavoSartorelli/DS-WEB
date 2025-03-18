@@ -1,9 +1,9 @@
 <?php
-   session_start();
+    session_start();
 
-     if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha']) or $_SESSION["cargo"] != "admin"){
-       header('location: index.php');
-     }
+    if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha']) or $_SESSION["cargo"] != "admin"){
+    header('location: index.php');
+    }
 ?>
 
 <!DOCTYPE html>

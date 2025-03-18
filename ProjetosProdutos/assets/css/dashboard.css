@@ -1,4 +1,18 @@
-.dashboard{
+:root {
+    --background: #fff;
+    --title: #000;
+    --shadow: #0000001a;
+    --border: #a9a9a9;
+    --outline: #636363;
+    --outline-focus: #1f3040;
+    --primary: #3535dc;
+}
+
+h1 {
+    color: var(--title);
+}
+
+.dashboard {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +20,7 @@
     gap: 30px;
 }
 
-.obs{
+.obs {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -17,32 +31,32 @@
     margin-top: 10px;
 }
 
-.card-dashboard{
+.card-dashboard {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: end;
     width: 350px;
-    height: 150px; 
-    background-color: #fff;
+    height: 150px;
+    background-color: var(--background);
     padding: 20px 40px;
     border-radius: 10px;
-    color: #3535dc;
-    border: 1px solid #3535dc;
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
-.dash-info{
+.dash-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
 
-.dash-info>h1{
+.dash-info>h1 {
     font-size: 28px;
 }
 
-.card-dashboard>p{
+.card-dashboard>p {
     position: absolute;
     top: 50%;
     left: 20px;
@@ -51,13 +65,13 @@
     width: 50%;
 }
 
-.card-dashboard>span{
+.card-dashboard>span {
     font-weight: 600;
     font-size: 50px;
 }
 
 
-.card-container{
+.card-container {
     display: flex;
     align-items: center;
     gap: 10px;

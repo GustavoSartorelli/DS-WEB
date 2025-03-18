@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a42e32da7f.js" crossorigin="anonymous"></script>
-    <title>Login - Sugnup</title>
+    <title>Signup - Restrited</title>
 </head>
 <body>
 <form action="./insertSignup.php" method="post" name="form">
-        <h1>Login Admin</h1>
+        <h1>Create User</h1>
         <div class="input-fields">
             <input type="text" name="name" id="name" placeholder="" autofocus>
             <label for="name">Name</label>

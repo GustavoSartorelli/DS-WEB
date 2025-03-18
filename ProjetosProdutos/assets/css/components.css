@@ -1,3 +1,18 @@
+:root {
+    --background: #fff;
+    --title: #000;
+    --text: #4c4c4c;
+    --shadow: #0000001a;
+    --border: #a9a9a9;
+    --outline: #636363;
+    --outline-focus: #1f3040;
+    --primary: #3535dc;
+}
+
+h1 {
+    color: var(--title);
+}
+
 /* NAVBAR */
 
 nav {
@@ -7,8 +22,8 @@ nav {
     display: flex;
     width: 100%;
     padding: 30px 20px 30px 20px;
-    border-bottom: 1px solid #c9c9c9;
-    background-color: #fff;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--background);
 }
 
 ul {
@@ -40,10 +55,10 @@ li .meumenu:hover {
 }
 
 li .active-url {
-    color: #3535dc;
+    color: var(--primary);
     font-weight: 600;
     font-style: italic;
-    border-bottom: 2px solid #3535dc;
+    border-bottom: 2px solid var(--primary);
     transition: all 0.3s ease;
 }
 
@@ -58,16 +73,17 @@ li>a {
 }
 
 
-.dropdown-user:hover .drop-user-content{
+.dropdown-user:hover .drop-user-content {
     display: flex;
 }
-.dropdown-user{
+
+.dropdown-user {
     display: flex;
     position: relative;
     flex-direction: column;
 }
 
-.drop-user-content{
+.drop-user-content {
     width: 380px;
     position: absolute;
     right: 0px;
@@ -75,28 +91,28 @@ li>a {
     display: none;
     flex-direction: column;
     gap: 10px;
-    background-color: #fff;
-    border: 1px solid #a9a9a9;
+    background-color: var(--background);
+    border: 1px solid var(--border);
     padding: 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
-.drop-user{
+.drop-user {
     width: 100%;
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.drop-user-info{
+.drop-user-info {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-.drop-img{
+.drop-img {
     width: 35px;
     height: 35px;
     background-color: #c6c6c6;
@@ -108,16 +124,16 @@ li>a {
     transition: all 0.3s ease;
 }
 
-.drop-img:hover{
+.drop-img:hover {
     background-color: #acacac;
 }
 
-.drop-img>i{
+.drop-img>i {
     color: #2c2c2c;
     font-size: 18px;
 }
 
-.drop-logout{
+.drop-logout {
     width: 100%;
     display: flex;
     align-items: center;
@@ -133,7 +149,7 @@ li>a {
     transition: all 0.3s ease;
 }
 
-.drop-logout:hover{
+.drop-logout:hover {
     background-color: #8e1b1b;
 }
 
@@ -189,4 +205,3 @@ th {
 .fa-trash:hover {
     color: #8e1b1b;
 }
-
