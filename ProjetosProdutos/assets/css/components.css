@@ -60,7 +60,6 @@ li>a {
 
 .dropdown-user:hover .drop-user-content{
     display: flex;
-    opacity: 0;
 }
 .dropdown-user{
     display: flex;
