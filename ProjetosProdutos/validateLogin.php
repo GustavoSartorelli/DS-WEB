@@ -46,8 +46,9 @@
         if(!empty($email) && !empty($senha)){
             $stmt = $db->query("SELECT * FROM ´admin´ WHERE email = '$email' AND senha = '$senha'");
             $stmt->execute();
-            if ($stmt->rowCount() != 1){
-                echo "<a> PALMEIRAS</a>";
+            $linhas = $stmt->rowCount();
+            if ($linhas != 1){
+                echo "<br> PALMEIRAS<br>";
             }
         }
     }

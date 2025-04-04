@@ -1,9 +1,9 @@
 <?php
    session_start();
-
-     if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha'])){
-       header('location: login.php');
-     }
+   $_SESSION['qualquerUm'] = 2;
+    if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha'])){
+        header('location: login.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -11,16 +11,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/log.css">
-    <link rel="stylesheet" href="./assets/css/components.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/log.css">
     <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a42e32da7f.js" crossorigin="anonymous"></script>
     <title>Client - Dashboard</title>
 </head>
 <body>
     <?php 
-        include_once "./assets/components/navbar.php";
+        include_once "./assets/components/navbar.php"
     ?>
     <ul class="ul-wrapper">
         <li class="wrapper alert-wrapper" id="alert-wrapper"></li>
@@ -52,7 +53,7 @@
         ?>
         <button type="submit">Submit</button>
     </form>
-    <div class="table-clientes" style="padding-block: 30px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+    <div class="table-clients">
         <h1>Customer Registration</h1>
         <?php include "./assets/components/tableClients.php"?>
     </div>

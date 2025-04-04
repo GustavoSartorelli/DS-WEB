@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/components.css">
     <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/log.css">
     <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a42e32da7f.js" crossorigin="anonymous"></script>
     <title>Index - Dashboard</title>
@@ -51,9 +52,19 @@
                     echo "<span>".$data."</span>";
                 ?>
             </div>
+            <div class="card-dashboard">
+                <p>Number of registered sales:</p>
+                <?php
+                    include "conn.php";
+                    $query = $db->query("SELECT * from produtos");
+                    $query->execute();
+                    $data = $query->rowCount();
+                    
+                    echo "<span>".$data."</span>";
+                ?>
+            </div>
         </div>
     </section>
 </body>
 <script src="./assets/js/script.js"></script>
-<script src="./assets/js/theme.js"></script>
 </html>

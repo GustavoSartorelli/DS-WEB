@@ -1,9 +1,9 @@
 <?php
-   session_start();
-
-     if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha'])){
-       header('location: login.php');
-     }
+    session_start();
+    $_SESSION['qualquerUm'] = 3;
+    if(!isset($_SESSION['nome']) and !isset($_SESSION['email']) and !isset($_SESSION['senha'])){
+        header('location: login.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 <body>
 <?php 
         include_once "./assets/components/navbar.php";
-        // include "./product/validateProduct.php";
+        include "./product/validateProduct.php";
     ?>
     <ul class="ul-wrapper">
         <li class="wrapper alert-wrapper" id="alert-wrapper"></li>
@@ -30,7 +30,7 @@
         <li class="wrapper alert-wrapper <?= isset($_SESSION['erroStock']) ? 'open' : '';?>" id="alert-wrapper-stock"><?= $_SESSION["erroStock"]; unset($_SESSION['erroStock'])?></li>
         <li class="wrapper alert-wrapper <?= isset($_SESSION['erroPreco']) ? 'open' : '';?>" id="alert-wrapper-price"><?= $_SESSION["erroPreco"]; unset($_SESSION['erroPreco'])?></li>
     </ul>
-    <form action="./product/insertProducts.php" method="post" name="form" ><!--onsubmit="return validarDadosProduto(event)"-->
+    <form action="./product/insertProducts.php" method="post" name="form" onsubmit="return validarDadosProduto()">
         <h1>Register Product</h1>
         <div class="input-fields">
             <input type="text" name="name" id="name" placeholder="" autofocus value="<?=isset($_SESSION['valorNomeP'])? $_SESSION['valorNomeP'] : "" ?>">
@@ -50,7 +50,7 @@
         </div>
         <button type="submit">Submit</button>
     </form>
-    <div class="table-clientes" style="padding-block: 30px; display: flex; flex-direction: column; align-items: center; gap: 30px;">
+    <div class="table-products">
         <h1>Customer Registration</h1>
         <?php include "./assets/components/tableProducts.php"?>
     </div>
